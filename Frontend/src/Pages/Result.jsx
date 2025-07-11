@@ -37,13 +37,17 @@ const Result = () => {
           alt="Generated"
           className="rounded-xl max-w-sm w-full object-cover border-2 border-b-blue-600"
         />
+
+        {/* Premium Spinner Overlay */}
+        {loading && (
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-xl backdrop-blur-sm z-10">
+            <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        )}
       </div>
 
-      {/* Loading Indicator */}
-      <p className={!loading ? 'hidden' : 'text-white mt-2'}>Loading...</p>
-
       {/* Prompt Input */}
-      {!isImageLoaded && (
+      {!isImageLoaded && !loading && (
         <div className="flex w-full max-w-xl bg-neutral-500 rounded-full overflow-hidden mt-6 px-2 py-1">
           <input
             onChange={(e) => setInput(e.target.value)}
@@ -62,7 +66,7 @@ const Result = () => {
       )}
 
       {/* Actions */}
-      {isImageLoaded && (
+      {isImageLoaded && !loading && (
         <div className="flex gap-2 flex-wrap justify-center text-white text-sm p-0.5 mt-10 rounded-full">
           <p
             onClick={() => {

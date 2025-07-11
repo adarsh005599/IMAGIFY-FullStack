@@ -36,3 +36,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+/* tailwind.config.js must have darkMode: 'class' */
+html.dark {
+  background-color: #0f0f0f; /* Dark bg */
+  color: white;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
