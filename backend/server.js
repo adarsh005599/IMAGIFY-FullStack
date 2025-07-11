@@ -8,40 +8,28 @@ import imageRouter from './routes/imageRoutes.js';
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-// ✅ Allowed Frontend Origins
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://imagify-fullstack-frontend.onrender.com'
-];
-
-// ✅ CORS Configuration
+// CORS config for production (Render frontend)
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('CORS policy: Not allowed by server'));
-    }
-  },
+  origin: 'https://imagify-fullstack-frontend.onrender.com',
   credentials: true,
 }));
 
-// ✅ Parse JSON bodies
+// Middleware
 app.use(express.json());
 
-// ✅ Connect MongoDB
+// DB Connection
 await connectDB();
 
-// ✅ Routes
+// Routes
 app.use('/api/user', userRouter);
 app.use('/api/image', imageRouter);
 
-// ✅ Health Check
+// Root test route
 app.get('/', (req, res) => {
-  res.send('API is working!');
+  res.send("API is working!");
 });
 
-// ✅ Start Server
+// Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });

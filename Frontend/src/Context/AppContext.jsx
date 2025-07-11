@@ -68,8 +68,10 @@ const AppContextProvider = (props) => {
         { prompt }, // ✅ only prompt — no userId
         {
           headers: {
-            token: token,
-          },
+  'Content-Type': 'application/json',
+  Authorization: `Bearer ${token}`,
+},
+
         }
       );
 
