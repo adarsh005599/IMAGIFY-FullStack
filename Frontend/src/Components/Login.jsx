@@ -21,6 +21,7 @@ const Login = () => {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+    console.log('📨 Form submitted:', { isSignup, email, password, name });
 
     if (!validateEmail(email)) {
       toast.warning('Please enter a valid email address.');
@@ -34,7 +35,7 @@ const Login = () => {
 
     try {
       if (!isSignup) {
-        const { data } = await axios.post(backendUrl + '/api/user/login', { email, password });
+        const { data } = await axios.post(`${backendUrl}/api/user/login`, { email, password });
 
         if (data.success) {
           setToken(data.token);
@@ -53,7 +54,7 @@ const Login = () => {
           return;
         }
 
-        const { data } = await axios.post(backendUrl + '/api/user/register', { name, email, password });
+        const { data } = await axios.post(`${backendUrl}/api/user/register`, { name, email, password });
 
         if (data.success) {
           setToken(data.token);
@@ -68,7 +69,7 @@ const Login = () => {
         }
       }
     } catch (error) {
-      toast.error(error.message || 'Something went wrong.');
+      toast.error(error.response?.data?.message || 'Something went wrong.');
     }
   };
 
@@ -105,17 +106,14 @@ const Login = () => {
           {isSignup ? 'Join us! It takes only a minute.' : 'Welcome back! Please sign in.'}
         </motion.p>
 
-        <motion.form
-          onSubmit={onSubmitHandler}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: 'easeOut' }}
-          className="space-y-4"
-        >
+        {/* ✅ Regular form for reliability */}
+        <form onSubmit={onSubmitHandler} className="space-y-4">
           {isSignup && (
             <div className="relative">
+              <label htmlFor="name" className="sr-only">Full Name</label>
               <FiUser className="absolute left-4 top-3.5 text-white/70" />
               <input
+                id="name"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 type="text"
@@ -126,8 +124,10 @@ const Login = () => {
           )}
 
           <div className="relative">
+            <label htmlFor="email" className="sr-only">Email</label>
             <FiMail className="absolute left-4 top-3.5 text-white/70" />
             <input
+              id="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               type="email"
@@ -138,8 +138,10 @@ const Login = () => {
           </div>
 
           <div className="relative">
+            <label htmlFor="password" className="sr-only">Password</label>
             <FiLock className="absolute left-4 top-3.5 text-white/70" />
             <input
+              id="password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               type="password"
@@ -161,7 +163,7 @@ const Login = () => {
           >
             {isSignup ? 'Sign Up' : 'Login'}
           </button>
-        </motion.form>
+        </form>
 
         <motion.p
           initial={{ opacity: 0, y: 10 }}
