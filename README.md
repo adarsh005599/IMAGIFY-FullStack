@@ -1,9 +1,9 @@
 # IMAGIFY-FullStack
 
 # What is this?
-IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictures easily. Think of it as your personal mini Photoshop, built right into the browser.
+IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictures easily. Think of it as your personal mini-Photoshop, built right into the browser.
 
-# What it can do
+# What can it do?
 - Login securely with tokens
 - Upload images from your device
 - Resize, crop, or add cool filters
@@ -12,8 +12,10 @@ IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictur
 # Tools used
 - Frontend: React.js
 - Backend: Node.js + Express
+- PostMan
 - Database: MongoDB
 - Image handling: Sharp
+- Use AI to make the format structure more readable
 
 # How to run it
 After cloning the repo:
