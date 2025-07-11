@@ -25,7 +25,6 @@ const App = () => {
         <Route path='/buy' element={<Bycredit/>}/>
         
       </Routes>
-      
       <Fotter/>
       
     </div>
