@@ -27,7 +27,7 @@ const AppContextProvider = (props) => {
       const res = await axios.get(`${backendUrl}/api/user/credits`, {
         headers: {
           'Content-Type': 'application/json',
-          token: token,
+           Authorization: `Bearer ${token}`,
         },
       });
 
