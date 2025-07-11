@@ -12,6 +12,8 @@ const AppContextProvider = (props) => {
   const [credits, setCredits] = useState(0);
 
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  
+
   const navigate = useNavigate();
 
   // 🔁 Load credits when token changes
