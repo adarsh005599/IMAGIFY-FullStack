@@ -1,4 +1,4 @@
-Click => = https://imagify-fullstack-frontend.onrender.com
+Click => https://imagify-fullstack-frontend.onrender.com
 
 # IMAGIFY-FullStack
 
