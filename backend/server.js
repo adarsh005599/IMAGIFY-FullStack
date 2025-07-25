@@ -10,7 +10,11 @@ const app = express();
 
 // CORS config for production (Render frontend)
 app.use(cors({
-  origin: 'https://imagify-fullstack-frontend.onrender.com',
+  
+origin: [
+    'https://imagify-fullstack-frontend.onrender.com', // live frontend
+    'http://localhost:5173'                             // local dev frontend
+  ],
   credentials: true,
 }));
 

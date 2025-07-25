@@ -7,8 +7,6 @@ import star_icon from './star_icon.svg'
 import rating_star from './rating_star.svg'
 import sample_img_1 from './sample_img_1.png'
 import sample_img_2 from './sample_img_2.png'
-import profile_img_1 from './profile_img_1.png'
-import profile_img_2 from './profile_img_2.png'
 import step_icon_1 from './step_icon_1.svg'
 import step_icon_2 from './step_icon_2.svg'
 import step_icon_3 from './step_icon_3.svg'
@@ -18,6 +16,11 @@ import cross_icon from './cross_icon.svg'
 import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
+import adarsh_img from './adarsh_img.jpg'
+import review2_img from './review2_img.jpg'
+import review_img from './review_img.JPG'
+
+
 
 export const assets = {
     logo,
@@ -34,7 +37,10 @@ export const assets = {
     cross_icon,
     star_group,
     credit_star,
-    profile_icon
+    profile_icon,
+    adarsh_img,
+    review_img,
+    review2_img 
 }
 
 export const stepsData = [
@@ -57,25 +63,26 @@ export const stepsData = [
 
 export const testimonialsData = [
     {
-        image:profile_img_1,
-        name:'Donald Jackman',
-        role:'Graphic Designer',
+        image:adarsh_img,
+        name:'Adarsh Singh',
+        role:'Full Stack Developer',
         stars:5,
         text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
     },
     {
-        image:profile_img_2,
-        name:'Richard Nelson',
-        role:'Content Creator',
+        image:review_img,
+        name:'Diksha Singh',
+        role:'Model',
         stars:4,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+        text:`Loved how fast and accurate the image generation is!
+              Perfect for quick concept art and inspiration on the go..`
     },
     {
-        image:profile_img_1,
-        name:'Donald Jackman',
+        image:review2_img ,
+        name:'Happy',
         role:' Graphic Designer',
         stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+        text:`Imagify is insanely easy to use—turning text into images feels like magic!.`
     },
 ]
 

@@ -1,0 +1,4 @@
+MONGODB_URI=mongodb+srv://happysingh005599:yourPassword-hear@cluster0.wfn9xfz.mongodb.net
+JWT_SECRET=your secret hear
+CLIPDROP_API=Clickdrop api paste hear 
+PORT=8000
