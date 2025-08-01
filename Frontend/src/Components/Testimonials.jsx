@@ -17,7 +17,7 @@ const Testimonials = () => {
     </div>
   );
 };
-
+  
 // Separate component with animation
 const AnimatedCard = ({ testimonial, index }) => {
   const [ref, inView] = useInView({
