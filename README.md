@@ -5,9 +5,9 @@ Click => https://imagify-fullstack-frontend.onrender.com
 ## 📸 Screenshots  
 
 <p align="center">
+  <img src="./Frontend/src/assets/Screenshot%20(193).png" alt="login" width="250"/>
   <img src="./Frontend/src/assets/Screenshot%20(191).png" alt="Home Page" width="250"/>
-  <img src="./Frontend/src/assets/Screenshot%20(192).png" alt="Login Page" width="250"/>
-  <img src="./Frontend/src/assets/Screenshot%20(193).png" alt="Editor" width="250"/>
+  <img src="./Frontend/src/assets/Screenshot%20(192).png" alt="testo page" width="250"/>
   <img src="./Frontend/src/assets/Screenshot%20(194).png" alt="Preview" width="250"/>
   <img src="./Frontend/src/assets/Screenshot%20(195).png" alt="Final" width="250"/>
 </p>
