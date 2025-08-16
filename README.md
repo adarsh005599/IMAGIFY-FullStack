@@ -5,11 +5,11 @@ Click => https://imagify-fullstack-frontend.onrender.com
 ## 📸 Screenshots  
 
 <p align="center">
-  <img src="./src/assets/Screenshot%20(191)" alt="Home Page" width="250"/>
-  <img src="./src/assets/Screenshot%20(192).png" alt="Login Page" width="250"/>
-  <img src="./src/assets/Screenshot%20(193)" alt="Trailer" width="250"/>
-  <img src="./src/assets/Screenshot%20(194).png" alt="Login Page" width="250"/>
-  <img src="./src/assets/Screenshot%20(195)" alt="Trailer" width="250"/>
+  <img src=".Frontend/src/assets/Screenshot%20(191)" alt="Home Page" width="250"/>
+  <img src=".Frontend/src/assets/Screenshot%20(192).png" alt="Login Page" width="250"/>
+  <img src=".Frontend/src/assets/Screenshot%20(193)" alt="Trailer" width="250"/>
+  <img src=".Frontend/src/assets/Screenshot%20(194).png" alt="Login Page" width="250"/>
+  <img src=".Frontend/src/assets/Screenshot%20(195)" alt="Trailer" width="250"/>
 </p>
 
 # What is this?
