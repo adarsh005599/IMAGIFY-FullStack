@@ -32,7 +32,7 @@ IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictur
 
 # How to run it
 After cloning the repo:
-```bash
+
 npm install
 npm start
 // Frontend-- npm run dev
@@ -40,4 +40,3 @@ npm start
 Built with ❤️ by Adarsh — always learning, experimenting, and building cool stuff
 
 
-If you'd like to add a little screenshot preview, dark/light mode badge, or contributor guide, I can help with that too. Want this to reflect your vibe more? Just say the word!
