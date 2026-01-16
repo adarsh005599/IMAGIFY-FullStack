@@ -34,9 +34,13 @@ IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictur
 After cloning the repo:
 
 npm install
+
 npm start
+
 // Frontend-- npm run dev
+
 // Backend-- npm run start
+
 Built with ❤️ by Adarsh — always learning, experimenting, and building cool stuff
 
 
