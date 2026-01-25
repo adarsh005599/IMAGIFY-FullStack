@@ -2,7 +2,7 @@ Click => https://imagify-fullstack-frontend.onrender.com
 
 # IMAGIFY-FullStack
 
-## 📸 Screenshots  
+# 📸 Screenshots  
 
 <p align="center">
   <img src="./Frontend/src/assets/Screenshot%20(193).png" alt="login" width="250"/>
