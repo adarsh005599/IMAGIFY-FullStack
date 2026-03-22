@@ -4,7 +4,6 @@ Click => https://imagify-fullstack-frontend.onrender.com
 
 # 📸 Screenshots  
 
-
 <p align="center">
   <img src="./Frontend/src/assets/Screenshot%20(193).png" alt="login" width="250"/>
   <img src="./Frontend/src/assets/Screenshot%20(191).png" alt="Home Page" width="250"/>
