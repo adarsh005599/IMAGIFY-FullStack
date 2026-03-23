@@ -15,7 +15,6 @@ Click => https://imagify-fullstack-frontend.onrender.com
 # What is this?
 IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictures easily. Think of it as your personal mini-Photoshop, built right into the browser.
 
-
 # What can it do?
 - Login securely with tokens
 - Upload images from your device
