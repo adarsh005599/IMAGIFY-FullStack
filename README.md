@@ -11,7 +11,6 @@ Click => https://imagify-fullstack-frontend.onrender.com
   <img src="./Frontend/src/assets/Screenshot%20(194).png" alt="Preview" width="250"/>
   <img src="./Frontend/src/assets/Screenshot%20(195).png" alt="Final" width="250"/>
 </p>
-
 # What is this?
 IMAGIFY is a full-stack image tool that lets you upload, edit, and manage pictures easily. Think of it as your personal mini-Photoshop, built right into the browser.
 
